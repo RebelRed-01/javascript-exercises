@@ -11,7 +11,7 @@ const sumAll = function(firstNum, lastNum) {
         }
     }
     
-    if (firstNum < 0 || lastNum < 0 || isNaN(firstNum) || isNaN(lastNum)) {
+    if (firstNum < 0 || lastNum < 0 || !Number.isInteger(firstNum) || !Number.isInteger(lastNum)) {
         return 'ERROR';
     }
 
