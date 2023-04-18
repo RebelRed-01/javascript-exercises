@@ -1,8 +1,13 @@
-const sumAll = function(first, last) {
+const sumAll = function(firstNum, lastNum) {
     let sum = 0;
-    for (let i = first; i <= last; i++) {
+    for (let i = firstNum; i <= lastNum; i++) {
         sum += i;
     }
+    
+    if (firstNum < 0 || lastNum < 0 || isNaN(firstNum) || isNaN(lastNum)) {
+        return 'ERROR';
+    }
+
     return sum;
 };
 
